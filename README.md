@@ -8,6 +8,8 @@ When using `VariantProps` from `class-variance-authority` through a re-exported 
 
 **Current Output:**
 
+<img width="1101" height="536" alt="image-1" src="https://github.com/user-attachments/assets/87569413-d3f6-421d-96d3-e27536fbce4f" />
+
 ```typescript
 // buttonVariants types are correct ✅
 declare const buttonVariants: (props?: ({
@@ -34,7 +36,7 @@ declare function Button({
 1. **Clone and install**
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/chanwukim/tsdown.git
    cd tsdown
    pnpm install
    ```
@@ -47,6 +49,9 @@ declare function Button({
    ```
 
 3. **Verify broken IntelliSense**
+
+<img width="717" height="358" alt="image-2" src="https://github.com/user-attachments/assets/874c143e-166c-411d-98bf-b7aea6b899bd" />
+
    ```bash
    code apps/react/src/App.tsx
    # variant prop shows as 'string' instead of union type
