@@ -1,0 +1,41 @@
+{
+  "name": "@repo/ui-theme",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./src/styles.css",
+    "./postcss.config": "./postcss.config.mjs"
+  },
+  "files": [
+    "dist",
+    "src/styles.css"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "lint": "eslint .",
+    "format": "prettier .",
+    "clean": "git clean -xdf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tw-animate-css": "^1.3.6"
+  },
+  "devDependencies": {
+    "@repo/config-eslint": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.12",
+    "eslint": "catalog:tool",
+    "tailwindcss": "^4.1.12",
+    "tsdown": "catalog:tool",
+    "typescript": "catalog:tool"
+  }
+}

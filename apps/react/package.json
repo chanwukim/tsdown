@@ -1,0 +1,31 @@
+{
+  "name": "@repo/react",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier .",
+    "clean": "git clean -xdf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "@repo/ui-theme": "workspace:*",
+    "@repo/ui-react-button": "workspace:*",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
+  },
+  "devDependencies": {
+    "@repo/config-eslint": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/node": "^22",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "catalog:tool",
+    "typescript": "catalog:tool",
+    "vite": "catalog:tool"
+  }
+}

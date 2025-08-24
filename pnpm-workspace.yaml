@@ -1,0 +1,16 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "packages/*/*"
+
+catalogs:
+  react:
+    react: ^19.1.0
+    react-dom: ^19.1.0
+  radix:
+    "@radix-ui/react-slot": ^1.2.3
+  tool:
+    vite: ^7.0.0
+    eslint: ^9.0.0
+    tsdown: ^0.14.1
+    typescript: ^5.9.0

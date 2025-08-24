@@ -1,0 +1,25 @@
+{
+  "name": "turborepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "prepare": "lefthook install",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint --continue -- --fix",
+    "format": "turbo run format --continue -- --write",
+    "clean": "turbo run clean && git clean -xdf node_modules .turbo"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
+    "lefthook": "^1.12.3",
+    "prettier": "^3.6.0",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "turbo": "^2.5.5"
+  }
+}
